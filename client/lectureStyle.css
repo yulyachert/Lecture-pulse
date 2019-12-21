@@ -1,0 +1,49 @@
+.emoji input {
+    display: none;
+}
+
+footer
+{
+    box-sizing: border-box;
+    border-top: 2px solid #e6e6e6;
+    height: 220px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.labels label {
+    margin: 20px;
+}
+
+.labels label:hover,
+.first-pic:checked ~ .labels label:nth-of-type(1),
+.second-pic:checked ~ .labels label:nth-of-type(2),
+.third-pic:checked ~ .labels label:nth-of-type(3)
+{
+    opacity: .5;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.sub {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #6495ED;
+    font-size: 15px;
+}
+
