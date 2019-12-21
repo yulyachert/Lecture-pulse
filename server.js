@@ -9,12 +9,11 @@ const event_keys = new Set();
 const connections = [];
 
 const app = express();
-app.use();
 app.use(express.static(path.join(process.cwd(), 'client')));
 
 const server = app.listen(port);
 
-const wss = new WebSocket.Server({noServer: true});
+const wss = new ws.Server({noServer: true});
 
 
 server.on('upgrade', (req, socket, head) => {
