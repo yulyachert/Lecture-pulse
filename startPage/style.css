@@ -13,19 +13,31 @@
 
 .password {
     border-radius: 5px;
-    width: 400px;
+    width: 415px;
     height: 50px;
+    margin: 5px;
     font-size: 25px;
     border: 2px solid ;
 }
 
+
 .approve {
     height: 56px;
+<<<<<<< HEAD
     width: 100px;
     border-radius: 5px;
     position: relative;
     font-size: 25px;
     background-color: #9ACD32;
+=======
+    width: 79px;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    background-color: yellowgreen;
+    border: 0;
+>>>>>>> 386f18968030e249d0a60c48d945bb2fdc476a1e
 }
 
 .form button{
@@ -34,7 +46,13 @@
     height: 50px;
     border-radius: 5px;
     font-size: 25px;
+<<<<<<< HEAD
     background-color: #6495ED;
+=======
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+>>>>>>> 386f18968030e249d0a60c48d945bb2fdc476a1e
 }
 
 
