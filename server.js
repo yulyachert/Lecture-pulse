@@ -7,6 +7,7 @@ const emogies = [];
 const statistics = [];
 const multer  = require('multer');
 const upload = multer();
+const uuidv1 = require('uuid/v1');
 
 const event_keys = new Set(['123']);
 
@@ -20,14 +21,19 @@ const server = app.listen(port);
 const wss = new ws.Server({noServer: true});
 
 app.use(bodyParser.json());
-
+lect_pull = {};
 
 app.post("/formPage.html", upload.none(), (req, res) => {
     let result = req.body;
     console.log(result);
 
+    const code = uuidv1();
+    event_keys.add(code);
+    lect_pull[code] = result;
 
-    res.redirect('./codePage.html?code=12345');
+    console.log(`for lect ${result.lecture} generated code ${code}`);
+
+    res.redirect(`./codePage.html?code=${code}`);
 });
 
 

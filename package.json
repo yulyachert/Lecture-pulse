@@ -23,6 +23,7 @@
     "body-parser": "latest"
   },
   "devDependencies": {
-    "multer": "^1.4.2"
+    "multer": "^1.4.2",
+    "uuid": "^3.3.3"
   }
 }
