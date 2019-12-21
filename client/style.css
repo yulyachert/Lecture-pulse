@@ -7,30 +7,40 @@
     align-items: center;
 }
 
-#code {
+.code {
     display: inline-block;
 }
 
 .password {
     border-radius: 5px;
-    width: 400px;
+    width: 415px;
     height: 50px;
+    margin: 5px;
     font-size: 25px;
+    border: 1px solid ;
 }
 
+
 .approve {
-    height: 55px;
-    width: 100px;
+    height: 56px;
+    width: 79px;
+    font-size: 25px;
+    color: white;
     border-radius: 5px;
     position: relative;
-    bottom: 5px;
+    background-color: yellowgreen;
+    border: 0;
 }
 
 .form button{
+    margin-top: 10px;
     width: 510px;
     height: 50px;
     border-radius: 5px;
     font-size: 25px;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
 }
 
 
