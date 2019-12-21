@@ -44,7 +44,7 @@ server.on('upgrade', (req, socket, head) => {
     console.log(eventKey);
     if (!event_keys.has(eventKey)) {
         console.log('sdkfm');
-        socket.close(new Error('Wrong eventKey'));
+        //socket.close(new Error('Wrong eventKey'));
     } else {
         wss.handleUpgrade(req, socket, head, ws => {
                 wss.emit('connection', ws, req);
