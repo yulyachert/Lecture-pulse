@@ -15,8 +15,8 @@
     background-color: #6495ED;
     border-radius: 50px;
 }
-.code {
-    font-size: 25px;
+#code {
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 

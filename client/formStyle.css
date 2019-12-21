@@ -18,7 +18,7 @@ form {
     border: 1px solid black;
 }
 
-::-webkit-input-placeholder {opacity: 0.5px; }
+::-webkit-input-placeholder {opacity: .5; }
 
 form label {
     font-size: 25px;
