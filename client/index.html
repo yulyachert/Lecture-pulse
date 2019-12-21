@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>StartPage</title>
     <link rel="stylesheet" href="./style.css">
-    <script type='module' src = '/index.mjs'></script>
+    <script type='module' src='/index.mjs'></script>
 </head>
 <body>
 
-    <main class="start">
-        <form id="code">
-            <div class="code">
+<main class="start">
+    <form id="code" action="./lecturePage.html">
+        <div class="code">
             <input class="password" type="text" placeholder="Введите код" name="eventKey"/>
-            <input class="approve" type="submit" value="OK"/>
+            <input onclick="window.location.href = './lecturePage.html';"
+                   class="approve" type="submit" value="OK"/>
         </div>
-        </form>
-        <form action="./formPage.html" class="form">
-            <button>Создать мероприятие</button>
-        </form>
+    </form>
+    <form action="./formPage.html" class="form">
+        <button>Создать мероприятие</button>
+    </form>
 
-    </main>
+</main>
 </body>
 </html>

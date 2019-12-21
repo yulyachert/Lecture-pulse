@@ -9,6 +9,7 @@ const main = eventKey => {
 };
 
 const connect = eventKey => {
+
     const url = `${location.origin.replace(/^http/, "ws")}?eventKey=${eventKey}`;
     return new WebSocket(url);
 };
